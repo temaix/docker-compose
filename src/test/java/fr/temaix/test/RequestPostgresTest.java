@@ -9,7 +9,9 @@ public class RequestPostgresTest {
     @Test
     public void test() {
         RequestPostgres requestPostgres = new RequestPostgres();
-        Assert.assertFalse(requestPostgres.readVersion().equals("0"));
+        String version = requestPostgres.readVersion();
+        System.out.println(version);
+        Assert.assertFalse(version.equals("0"));
     }
 
 }

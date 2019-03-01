@@ -12,10 +12,10 @@ public class RequestPostgres {
 
         try (Connection con = DriverManager.getConnection(url, user, password);
              Statement st = con.createStatement();
-             ResultSet rs = st.executeQuery("SELECT VERSION()")) {
+             ResultSet rs = st.executeQuery("SELECT * from sd_types_euas")) {
 
             if (rs.next()) {
-                return rs.getString(1);
+                return rs.getString(2);
             }
 
         } catch (SQLException ex) {
