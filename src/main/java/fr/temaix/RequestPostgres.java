@@ -6,7 +6,7 @@ public class RequestPostgres {
 
     public String readVersion() {
 
-        String url = "jdbc:postgresql://localhost:5432/bdd";
+        String url = "jdbc:postgresql://0.0.0.0:5432/bdd";
         String user = "etraffic";
         String password = "etraffic";
 
