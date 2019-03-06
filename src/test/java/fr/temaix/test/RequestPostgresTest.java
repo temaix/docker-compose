@@ -16,7 +16,7 @@ public class RequestPostgresTest {
 
     @BeforeClass
     public static void init() {
-        String url = "jdbc:postgresql://10.43.8.105:5432/bdd";
+        String url = "jdbc:postgresql://localhost:5432/bdd";
         String user = "etraffic";
         String password = "etraffic";
         File sqlFile = new File("docker/init.sql");
